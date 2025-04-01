@@ -1,6 +1,6 @@
-import iconStar from "./assets/icon-star.svg"
+import iconStar from "./images/icon-star.svg"
 import { useState } from "react"
-import illustrationThankYou from "./assets/illustration-thank-you.svg"
+import illustrationThankYou from "./images/illustration-thank-you.svg"
 
 export function App(){
   const [submited, setSubmited] = useState(false)
@@ -11,7 +11,7 @@ export function App(){
       setSubmited(true)
       return
     }
-    alert("Please, choose a rate button! ")
+    alert("Please, choose a button! ")
   }
 
   function handleChangeRateNote(value){
@@ -20,7 +20,7 @@ export function App(){
 
   return(
     submited === false ? (
-      <div className="bg-radial-gradient max-w-103 px-6 pt-6 pb-8 rounded-2xl font-overpass ">
+      <div className="bg-radial-gradient max-w-103 px-6 pt-6 pb-8 rounded-2xl font-overpass text-white">
         <div className="bg-dark-blue p-4 w-fit rounded-full mb-4">
           <img src={iconStar} alt="icone da estrela" />
         </div>
